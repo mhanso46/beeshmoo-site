@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Beeshmoo</title>
-<meta name="description" content="Beeshmoo helps you keep up with the people who matter: reminders to check in, plans, birthdays and conversation ideas.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Beeshmoo · Keep up with your people</title>
+<meta name="description" content="Beeshmoo gently reminds you who you haven't talked to in a while, keeps track of plans and birthdays, and gives you easy things to talk about.">
+<meta name="theme-color" content="#10222E">
+<meta property="og:title" content="Beeshmoo">
+<meta property="og:description" content="When your mind drifts, we bring you back to your people.">
+<meta property="og:url" content="https://beeshmoo.com/">
+<meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 22' fill='none' stroke-width='2.6' stroke-linecap='round'%3E%3Cpath d='M3 7c4-4 8 4 12 0s8-4 12 0' stroke='%2310222E'/%3E%3Cpath d='M3 15c4-4 8 4 12 0s8-4 12 0' stroke='%23B5502A'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,8 +17,8 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="top">
-  <div class="wrap">
+<header class="top hero-top">
+  <nav class="wrap nav">
     <a class="brand" href="/">
       <svg width="30" height="22" viewBox="0 0 30 22" fill="none" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
         <path class="logo-a" d="M3 7c4-4 8 4 12 0s8-4 12 0"/>
@@ -21,44 +26,158 @@
       </svg>
       Beeshmoo
     </a>
-    <p class="tagline">When your mind drifts, we bring you back to your people.</p>
+    <a class="nav-link" href="#how">How it works</a>
+  </nav>
+
+  <div class="wrap hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Coming soon to iPhone</p>
+      <h1>When your mind drifts, we bring you back to your people.</h1>
+      <p class="sub">Life gets busy and good friends drift. Beeshmoo gently reminds you who you haven't talked to in a while, keeps track of plans and birthdays, and hands you something real to talk about.</p>
+      <div class="cta-row">
+        <a class="btn btn-coral" href="mailto:hello@beeshmoo.com?subject=Tell%20me%20when%20Beeshmoo%20is%20ready">Get notified</a>
+        <a class="btn btn-ghost" href="#how">See how it works</a>
+      </div>
+    </div>
+
+    <div class="phone" aria-label="A preview of the Beeshmoo app's This week screen" role="img">
+      <div class="phone-screen">
+        <div class="ph-top">
+          <span class="ph-brand">
+            <svg width="20" height="15" viewBox="0 0 30 22" fill="none" stroke-width="2.8" stroke-linecap="round" aria-hidden="true">
+              <path class="logo-a" d="M3 7c4-4 8 4 12 0s8-4 12 0"/>
+              <path class="logo-b" d="M3 15c4-4 8 4 12 0s8-4 12 0"/>
+            </svg>
+            Beeshmoo
+          </span>
+        </div>
+        <div class="ph-body">
+          <p class="ph-h">This week</p>
+          <div class="ph-card">
+            <div class="ph-row"><span class="dot d-over"></span><span class="ph-t"><b>Check in with Jordan</b><small>Friends · 5 weeks</small></span><span class="pill p-over">5w</span></div>
+            <div class="ph-row"><span class="dot d-due"></span><span class="ph-t"><b>Call Grandma Rose</b><small>Immediate family · 9 days</small></span><span class="pill p-due">9d</span></div>
+            <div class="ph-row"><span class="dot d-wait"></span><span class="ph-t"><b>Waiting to hear back</b><small>Texted Priya yesterday</small></span></div>
+          </div>
+          <p class="ph-h">Coming up</p>
+          <div class="ph-card">
+            <div class="ph-row"><span class="ph-ico">🎂</span><span class="ph-t"><b>Sam's birthday</b><small>Saturday</small></span></div>
+            <div class="ph-row"><span class="ph-ico">☕</span><span class="ph-t"><b>Coffee with Alex</b><small>Sunday · 10:00 AM</small></span></div>
+          </div>
+          <div class="ph-card ph-wood">
+            <small>Something to ask Jordan</small>
+            <b>"What's a trip you still think about?"</b>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
-<main class="wrap">
-  <section class="lead">
-    <h1>Keep up with the people who matter.</h1>
-    <p>Life gets busy and good friends drift. Beeshmoo gently reminds you who you haven't talked to in a while, keeps track of plans and birthdays, and gives you easy things to talk about when you reach out.</p>
+<main>
+  <section id="how" class="wrap section">
+    <p class="kicker">How it works</p>
+    <h2>Three small steps, every week.</h2>
+    <ol class="steps">
+      <li>
+        <span class="step-n">1</span>
+        <h3>Add your people</h3>
+        <p>Put each person in a circle: family, loved ones, friends, coworkers. Closer circles get checked on more often.</p>
+      </li>
+      <li>
+        <span class="step-n">2</span>
+        <h3>Get a gentle nudge</h3>
+        <p>Each week Beeshmoo shows who's due. No streaks, no guilt. Busy week? Tap "Not this week" and it waits.</p>
+      </li>
+      <li>
+        <span class="step-n">3</span>
+        <h3>Have a real conversation</h3>
+        <p>Open their page for a thoughtful question or the news you jotted down last time, so a quick text turns into a real catch-up.</p>
+      </li>
+    </ol>
   </section>
 
-  <section class="features">
-    <div class="card">
-      <h2>Circles</h2>
-      <p>Sort people by how close they are: your partner, immediate family, loved ones, friends, coworkers and the people who take care of you. Each circle has its own rhythm.</p>
-    </div>
-    <div class="card">
-      <h2>Gentle reminders</h2>
-      <p>See who's due for a check-in this week. Reached out and waiting to hear back? Beeshmoo remembers that too.</p>
-    </div>
-    <div class="card">
-      <h2>Plans and birthdays</h2>
-      <p>Coffee on Saturday or "sometime in January," Beeshmoo keeps it on your calendar and nudges you when it's time to pick a date.</p>
-    </div>
-    <div class="card">
-      <h2>Things to talk about</h2>
-      <p>Thoughtful questions and fresh ideas each week, so a quick text turns into a real conversation.</p>
+  <section class="band">
+    <div class="wrap circles">
+      <div class="circles-copy">
+        <p class="kicker">Circles</p>
+        <h2>Everyone has a rhythm.</h2>
+        <p>Your mom doesn't need the same reminder as your old college roommate. Beeshmoo gives each circle its own pace, from every week to every couple of months.</p>
+        <p>There's even a circle for the people who take care of you, like your stylist or massage therapist, with reminders to book your next visit.</p>
+      </div>
+      <svg class="rings" viewBox="0 0 320 320" role="img" aria-label="Circles from closest to widest: Immediate family, Loved ones, Friends, Coworkers, Wider circle">
+        <circle cx="160" cy="160" r="150" class="r r5"/>
+        <circle cx="160" cy="160" r="120" class="r r4"/>
+        <circle cx="160" cy="160" r="90" class="r r3"/>
+        <circle cx="160" cy="160" r="60" class="r r2"/>
+        <circle cx="160" cy="160" r="30" class="r r1"/>
+        <circle cx="160" cy="160" r="7" class="r-you"/>
+        <text x="160" y="119" class="rl">Family</text>
+        <text x="160" y="89" class="rl">Loved ones</text>
+        <text x="160" y="59" class="rl">Friends</text>
+        <text x="160" y="29" class="rl">Coworkers</text>
+        <text x="160" y="299" class="rl">Wider circle</text>
+      </svg>
     </div>
   </section>
 
-  <section class="soon card">
-    <h2>Coming to iPhone</h2>
-    <p>Beeshmoo is in development. Want to hear when it's ready? Email <a href="mailto:hello@beeshmoo.com">hello@beeshmoo.com</a>.</p>
+  <section class="wrap section">
+    <p class="kicker">What's inside</p>
+    <h2>Small things that add up.</h2>
+    <div class="features">
+      <div class="feat">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 8-8"/><path d="M12 7v5l3 2"/></svg>
+        <h3>Gentle reminders</h3>
+        <p>See who's due this week. Reached out and waiting? Beeshmoo remembers and nudges you to follow up.</p>
+      </div>
+      <div class="feat">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+        <h3>Plans and birthdays</h3>
+        <p>Coffee on Saturday or "sometime in January." Beeshmoo nudges you when it's time to pick a date.</p>
+      </div>
+      <div class="feat">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></svg>
+        <h3>Things to talk about</h3>
+        <p>Thoughtful questions and fresh ideas each week, picked for each person.</p>
+      </div>
+      <div class="feat">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h9l3 3v13H6z"/><path d="M9 11h6M9 14.5h6M9 7.5h3"/></svg>
+        <h3>Remember the details</h3>
+        <p>Kids' names, a new job, a favorite restaurant, a gift idea. Jot it once and it's there next time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="private">
+      <svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg>
+      <div>
+        <h2>Private by design</h2>
+        <p>What you put in Beeshmoo is yours. No ads, no selling your information, and the people you add never hear from us. <a href="privacy.html">Read the privacy policy</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="cta-card">
+      <h2>Be the friend who remembers.</h2>
+      <p>Beeshmoo is coming to iPhone. Want to hear when it's ready?</p>
+      <a class="btn btn-coral" href="mailto:hello@beeshmoo.com?subject=Tell%20me%20when%20Beeshmoo%20is%20ready">Email hello@beeshmoo.com</a>
+    </div>
   </section>
 </main>
 
-<footer class="wrap foot">
-  <p>&copy; 2026 Beeshmoo LLC &middot; Minnesota</p>
-  <p><a href="privacy.html">Privacy policy</a> &middot; <a href="mailto:hello@beeshmoo.com">hello@beeshmoo.com</a></p>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <a class="brand brand-sm" href="/">
+      <svg width="22" height="16" viewBox="0 0 30 22" fill="none" stroke-width="2.6" stroke-linecap="round" aria-hidden="true">
+        <path class="logo-a" d="M3 7c4-4 8 4 12 0s8-4 12 0"/>
+        <path class="logo-b" d="M3 15c4-4 8 4 12 0s8-4 12 0"/>
+      </svg>
+      Beeshmoo
+    </a>
+    <p class="foot-links"><a href="privacy.html">Privacy</a><a href="mailto:hello@beeshmoo.com">hello@beeshmoo.com</a></p>
+    <p class="foot-copy">&copy; 2026 Beeshmoo LLC &middot; Minnesota</p>
+  </div>
 </footer>
 </body>
 </html>
