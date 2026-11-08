@@ -116,13 +116,14 @@ a { color: var(--teal); text-underline-offset: 3px; }
 .kicker { font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--coral); margin-bottom: 10px; }
 .section > h2, .circles h2 { font-size: clamp(28px, 4vw, 40px); }
 
-.steps { list-style: none; padding: 0; margin: 36px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; counter-reset: s; }
-.steps li { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 24px; }
+.steps { margin-top: 36px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.step { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 24px; display: grid; grid-template-columns: auto 1fr; column-gap: 14px; align-items: center; }
+.step p { grid-column: 1 / -1; }
 .step-n {
   display: inline-grid; place-items: center; width: 36px; height: 36px; border-radius: 50%;
-  background: var(--teal-soft); color: var(--teal); font: 600 18px var(--display); margin-bottom: 14px;
+  background: var(--teal-soft); color: var(--teal); font: 600 18px var(--display);
 }
-.steps h3 { font-size: 21px; }
+.steps h3 { font-size: 21px; text-wrap: pretty; }
 .steps p { margin-top: 8px; color: var(--muted); }
 
 .band { background: var(--band); padding-block: 72px; }
